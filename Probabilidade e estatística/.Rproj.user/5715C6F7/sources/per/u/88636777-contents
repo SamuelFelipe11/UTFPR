@@ -1,0 +1,10 @@
+dados = read.csv("IMC.csv", sep = ",", dec = ".")
+dados
+  
+
+calculaIMC= function(peso, altura){
+  peso/altura^2
+}
+
+(primeiralinha = calculaIMC(dados$peso, dados$altura))
+

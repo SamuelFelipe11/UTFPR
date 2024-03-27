@@ -1,0 +1,20 @@
+idade = c(20, 19, 33, 11)
+sexo = c("M", "F", "F", "M")
+
+dados = data.frame(idade, sexo)
+dados
+
+dados1 = read.csv("teste.csv", sep = ",")
+dados1
+
+
+names(dados1) #variaveis
+head(dados1) 
+(dados1$classe = c("a", "a", "b", "b", "c", "C"))
+dados1[1, c(2, 3)]
+
+dados1[4, 3] = "teste"
+
+(dados1$ife = ifelse(dados1$idade > 30, "velho", "novo"))
+
+dados1
