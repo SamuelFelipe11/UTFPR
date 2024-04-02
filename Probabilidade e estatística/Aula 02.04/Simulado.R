@@ -22,5 +22,5 @@ ggplot(dados4, aes(x = quality, y = media, fill = quality)) + geom_col()
 ggplot(dados, aes(x = alcohol)) + geom_histogram(fill = "red")
 
 #Exercício 6
-ggplot(dados, aes(x = quality, y = pH, fill = as.factor(pH))) + geom_boxplot()
+ggplot(dados, aes(x = as.factor(quality), y = pH, fill = as.factor(quality))) + geom_boxplot()
 
