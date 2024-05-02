@@ -24,7 +24,7 @@ int main(int argc, char **argv){
 	}else{
 		
 		MPI_Recv(&recebido, 50, MPI_CHAR, GERENTE, tag, MPI_COMM_WORLD, &stats);
-		printf("Mensagem recebida do processo %d: %s\n\n", i, recebido);
+		printf("Mensagem recebida do processo %d: %s\n\n", id, recebido);
 		
 	}
 
