@@ -1,0 +1,12 @@
+dados = read.csv("dados3.csv", sep = ",")
+install.packages("GGally")
+library(GGally)
+ggpairs(dados)
+install.packages("gamlss")
+library(gamlss)
+modelo = gamlss(consumo~chuva + temperatura + pb(altitude), data = dados)
+term.plot(modelo)
+summary(modelo)
+plot(modelo)
+
+dadosnovo = data.frame()
